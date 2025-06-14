@@ -19,14 +19,6 @@ hide_streamlit_style = """
       div[data-testid="stToolbar"] {
         display: none !important;
       }
-      /* La nevoie, ascunde orice buton cu aria-label pentru share/fork */
-      button[aria-label="Share"] ,
-      button[aria-label="Star"] ,
-      button[aria-label="Edit"] ,
-      button[aria-label="Open in GitHub"] {
-        display: none !important;
-      }
-      /* Ascunde footer standard */
       footer { visibility: hidden !important; }
     </style>
 """
