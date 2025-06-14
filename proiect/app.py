@@ -35,7 +35,6 @@ st.markdown(
             border-radius: 5px;
             margin: 5px 0;
         }
-        /* Am eliminat fundalul alb, folosind transparent */
         .chart-container {
             padding: 20px;
             border-radius: 10px;
