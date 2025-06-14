@@ -27,7 +27,7 @@ st.markdown(
         }
         .sidebar-header {
             font-size: 24px;
-            color: #1E3050;
+            color: #d6b76f;
             padding: 10px 0;
         }
         .stRadio > div {
