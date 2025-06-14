@@ -19,9 +19,10 @@ st.markdown(
     """
     <style>
         .main-header {
+            color: #1E3050;
             padding: 20px 0;
             text-align: center;
-            border-bottom: 2px solid;
+            border-bottom: 2px solid #1E3050;
             margin-bottom: 30px;
         }
         .sidebar-header {
