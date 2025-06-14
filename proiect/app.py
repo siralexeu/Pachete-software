@@ -43,7 +43,7 @@ st.markdown(
         }
     </style>
     """,
-    unsafe_allow_html=True
+    unsafe_allow_html=false
 )
 
 # Încărcare și imputare valori lipsă
