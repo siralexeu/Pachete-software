@@ -13,6 +13,15 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+hide_streamlit_style = """
+    <style>
+    /* Ascunde bara de meniu din dreapta sus */
+    #MainMenu {visibility: hidden;}
+    /* Ascunde footer-ul (care poate include elemente despre GitHub, Fork etc.) */
+    footer {visibility: hidden;}
+    </style>
+    """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Stilizare CSS personalizată
 st.markdown(
