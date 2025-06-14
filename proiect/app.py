@@ -15,12 +15,21 @@ st.set_page_config(
 )
 hide_streamlit_style = """
     <style>
-    /* Ascunde bara de meniu din dreapta sus */
-    #MainMenu {visibility: hidden;}
-    /* Ascunde footer-ul (care poate include elemente despre GitHub, Fork etc.) */
-    footer {visibility: hidden;}
+      /* Ascunde toolbar-ul din dreapta sus (Share, Star, Edit, GitHub) */
+      div[data-testid="stToolbar"] {
+        display: none !important;
+      }
+      /* La nevoie, ascunde orice buton cu aria-label pentru share/fork */
+      button[aria-label="Share"] ,
+      button[aria-label="Star"] ,
+      button[aria-label="Edit"] ,
+      button[aria-label="Open in GitHub"] {
+        display: none !important;
+      }
+      /* Ascunde footer standard */
+      footer { visibility: hidden !important; }
     </style>
-    """
+"""
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Stilizare CSS personalizată
