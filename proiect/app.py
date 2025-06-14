@@ -13,16 +13,16 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-hide_streamlit_style = """
-    <style>
-      /* Ascunde toolbar-ul din dreapta sus (Share, Star, Edit, GitHub) */
-      div[data-testid="stToolbar"] {
-        display: none !important;
-      }
-      footer { visibility: hidden !important; }
-    </style>
-"""
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+# hide_streamlit_style = """
+#     <style>
+#       /* Ascunde toolbar-ul din dreapta sus (Share, Star, Edit, GitHub) */
+#       div[data-testid="stToolbar"] {
+#         display: none !important;
+#       }
+#       footer { visibility: hidden !important; }
+#     </style>
+# """
+# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Stilizare CSS personalizată
 st.markdown(
