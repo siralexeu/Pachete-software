@@ -12,7 +12,7 @@ st.set_page_config(page_title="Analiză McDonald's", layout="wide")
 # Încarcă și impută valorile lipsă
 @st.cache_data
 def load_data():
-    mcd = pd.read_csv("McDonalds_financial_statements.csv", index_col=0)
+    mcd = pd.read_csv("proiect/McDonalds_financial_statements.csv", index_col=0)
     # Înlocuirea tuturor valorilor lipsă
     def nan_replace(tabel):
         assert isinstance(tabel, pd.DataFrame)
@@ -29,7 +29,7 @@ def load_data():
 
 @st.cache_data
 def load_gdp():
-    return pd.read_csv("gdp.csv")
+    return pd.read_csv("proiect/gdp.csv")
 
 mcd = load_data()
 gdp = load_gdp()
