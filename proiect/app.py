@@ -21,7 +21,7 @@ st.markdown(
         .main-header {
             padding: 20px 0;
             text-align: center;
-            border-bottom: 2px solid #1E3050;
+            border-bottom: 2px solid;
             margin-bottom: 30px;
         }
         .sidebar-header {
