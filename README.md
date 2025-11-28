@@ -1,2 +1,4 @@
-# Pachete-software
-An 3 semestrul 2 2024-2025
+# PS
+Pachete-software
+
+ASE-CSIE An 3 semestrul 2 2024-2025
